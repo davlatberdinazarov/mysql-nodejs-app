@@ -12,4 +12,6 @@ router.get('/', (req, res) => {
     });
 });
 
+// Get product by ID create put post 
+
 module.exports = router;

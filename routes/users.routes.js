@@ -1,6 +1,5 @@
 const express = require('express');
 const connection = require('../database/connetion');
-
 const router = express.Router();
 
 // Get all users
@@ -39,7 +38,6 @@ router.put("/update/:id", (req, res) => {
 })
 
 // Delete user
-
 router.delete("/delete/:id", (req, res) => {
     const userId = req.params.id;
     connection.query("DELETE FROM Users WHERE id = ?", [userId], (err, rows) => {
